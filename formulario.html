@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>TPO MOD2</title>
+    </head>
+    <body>
+        <div id="modal" class="modal ocultar">
+            <div id="message_container" class="message_container">
+                <h1>Erorr en validacion de datos.</h1>
+                <ul id="list_message" class="list_message"></ul>
+            </div>
+        </div>
+        <div id="modal2" class="modal ocultar">
+            <div id="message_container2" class="message_container">
+                <h1>Formulario finalizado.</h1>
+                <ul id="list_message2" class="list_message">
+                    <li id="greeting"></li>
+                </ul>
+            </div>
+        </div>
+
+        <form name="miform" action="" method="post">
+            <h1>Formulario de registro</h1>
+            <label for="firstName">ingrese un nombre : </label>
+            <input
+                type="text"
+                class="textbox"
+                name="firstName"
+                id="firstName"
+                placeholder="ingrese su/s nombre/s"
+            />
+            <label for="lastName">ingrese su apellido : </label>
+            <input
+                type="text"
+                class="textbox"
+                name="lastName"
+                id="lastName"
+                placeholder="ingrese su apellido"
+            />
+            <label for="phone">ingrese su numero de telefono: </label>
+            <input
+                type="text"
+                class="textbox"
+                name="phone"
+                id="phone"
+                placeholder="ingrese su numero de telefono"
+            />
+            <label for="email">ingrese su email: </label>
+            <input
+                type="text"
+                class="textbox"
+                name="email"
+                id="email"
+                placeholder="ingrese su email"
+            />
+            <label for="email_confirm">confirme su email. </label>
+
+            <input
+                type="text"
+                class="textbox"
+                name="email_confirm"
+                id="email_confirm"
+                placeholder="ingrese su email"
+            />
+            <label for="contact">Motivo de contacto </label>
+            <div>
+                <input
+                    type="radio"
+                    name="contact"
+                    id="contact1"
+                    value="ventas"
+                />
+                Area de ventas
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    name="contact"
+                    id="contact2"
+                    value="soporte"
+                />
+                Area de soporte
+            </div>
+
+            <label for="subject">Asunto: </label>
+            <input
+                type="text"
+                class="textbox"
+                name="subject"
+                id="subject"
+                placeholder="ingrese un asunto"
+            />
+
+            <label for="description">Asunto: </label>
+            <textarea
+                type="text"
+                class="textbox textarea"
+                name="description"
+                id="description"
+                placeholder="ingrese un asunto"
+            ></textarea>
+
+            <input type="submit" value="ENVIAR" class="submit" />
+        </form>
+        <script src="./script.js"></script>
+    </body>
+</html>
